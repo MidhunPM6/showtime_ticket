@@ -2,8 +2,15 @@
 module.exports = {
   content: ["./src/**/*.{html,js,jsx}"],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        Archivo: ['"Archivo Black"', 'serif'],
+        Robato : [ '"Roboto"', 'serif'],
+        Aclonica : [ '"Aclonica"', 'serif']
+      },
+    },
   },
   plugins: [],
 }
 
+  
