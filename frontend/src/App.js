@@ -1,6 +1,8 @@
 
 import {Routes,Route} from 'react-router-dom'
-import LandingPage from './Pages/LandingPage';
+import LandingPage from './Pages/UserPages/LandingPage';
+import LoginPage from './Pages/UserPages/LoginPage';
+import RegisterPage from './Pages/UserPages/RegisterPage';
 
 
 
@@ -9,6 +11,8 @@ function App() {
    <>
     <Routes>
       <Route path="/" element={<LandingPage/>}/>
+      <Route path="/login" element={<LoginPage/>}/>
+      <Route path="/register" element={<RegisterPage/>}/>
     </Routes>
     
    </>

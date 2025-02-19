@@ -2,16 +2,19 @@ import React, { useState } from 'react'
 import hearderLogo from '../../../assets/logo.png'
 import { NavHashLink } from 'react-router-hash-link'
 import moviePoster from '../../../assets/movieposter.jpg'
+import { Link, } from 'react-router-dom'
+
 
 const Landingpage = () => {
   const [isopen, setIsOpen] = useState(false)
+ 
 
   const toggleMenu = () => {
     setIsOpen(true)
   }
   return (
     <>
-      <div className='lg:h-screen h-auto  w-full   bg-gradient-to-t from-black via-gray-950 to-sky-800 lg:bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] lg:from-sky-800 lg:via-black lg:to-black'>
+      <div className='lg:h-screen h-auto  w-full   bg-gradient-to-t from-black via-gray-950 to-sky-950 lg:bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] lg:from-sky-950 lg:via-black lg:to-black'>
         <div className='flex justify-evenly items-center lg:pt-6 pt-10 '>
           
           <div className='flex flex-col justify-center items-center lg:flex-row lg:gap-8 flex-wrap lg:flex-nowrap'>
@@ -57,7 +60,7 @@ const Landingpage = () => {
             <NavHashLink className='hover:text-gray-50'>Home</NavHashLink>
             <NavHashLink className='hover:text-gray-50'>New Movies</NavHashLink>
             <NavHashLink className='hover:text-gray-50'>Book Now</NavHashLink>
-            <NavHashLink className='hover:text-gray-50'>Login</NavHashLink>
+            <Link className='hover:text-gray-50 ' to={'/login'}>Login</Link>
           </div>
         </div>
         <div
