@@ -93,12 +93,14 @@ const Landingpage = () => {
             </div>
           </div>
 
-          <div className='lg:mt-0 mt-10'>
+          <div className='lg:mt-0 mt-10 rounded-bl-3xl'>
             <img
               src={moviePoster}
               alt=''
-              className=' w-80 rounded-xl shadow-2xl'
+              className=' w-80  shadow-2xl rounded-md '
+              
             />
+            
           </div>
         </div>
       </div>
